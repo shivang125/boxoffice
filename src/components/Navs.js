@@ -12,7 +12,6 @@ const Navs = () => {
     <div>
       <ul>
         {LINKS.map(item=><li key={item.to}><Link to={item.to}>{item.text}</Link></li>)}
-      <li><Link to="/starred">Go to starred page</Link></li>
       </ul>
     </div>
   )
