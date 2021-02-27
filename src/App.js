@@ -1,27 +1,29 @@
-import React from "react"
-import {Switch,Route} from 'react-router-dom'
-import Home from "./pages/Home"
-import Starred from "./pages/Starred"
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import Home from './pages/Home';
+import Show from './pages/Show';
+import Starred from './pages/Starred';
 
 function App() {
   return (
     <Switch>
-     <Route exact={true} path="/">
-    <Home/>
+      <Route exact path="/">
+        <Home />
+      </Route>
 
-    </Route>
+      <Route exact path="/starred">
+        <Starred />
+      </Route>
 
-    <Route exact={true} path="/starred">
-    <Starred/>
+      <Route exact path="/show/:id">
+      <Show />
+      </Route>
 
-    </Route>
-
-    <Route>
-      <div>
-        not found
-        </div>
-    </Route>
-      </Switch>
+      <Route>
+        <div>Not found</div>
+      </Route>
+    </Switch>
   );
 }
 
