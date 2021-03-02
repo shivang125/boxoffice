@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const SeasonsWrapper = styled.div`
   p {
@@ -35,4 +35,3 @@ export const SeasonList = styled.div`
     }
   }
 `;
-

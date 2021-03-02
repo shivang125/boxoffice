@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import IMG_PLACEHOLDER from '../../images/not-found.png';
 import { CastList } from './Cast.styled';
 
@@ -13,9 +14,10 @@ const Cast = ({ cast }) => {
               alt="cast-person"
             />
           </div>
-          <div className ="actor">
+          <div className="actor">
             <span>
-              <span className="bold">{person.name}</span> | {character.name} {voice ? '| Voice' : ''}
+              <span className="bold">{person.name}</span> | {character.name}{' '}
+              {voice ? '| Voice' : ''}
             </span>
           </div>
         </div>
@@ -24,5 +26,4 @@ const Cast = ({ cast }) => {
   );
 };
 
-
-export default Cast
+export default Cast;
